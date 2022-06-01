@@ -49,7 +49,7 @@
 #### Editar lançamento de hora
 
 ```http
-  PUT /api/appointment
+  PUT /api/appointment/${id}
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |

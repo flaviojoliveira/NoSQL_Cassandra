@@ -1,5 +1,3 @@
-
-
 # Etapas para execução do projeto
 
 
@@ -89,4 +87,4 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `string` | **Obrigatório**. O ID da empresa |
 | `dateTo`      | `Date` | **Obrigatório**. Data inicial de busca |
-| `dateFrom`      | `string` | **Obrigatório**. Data final de busca |
+| `dateFrom`      | `Date` | **Obrigatório**. Data final de busca |

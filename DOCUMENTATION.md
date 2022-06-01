@@ -1,3 +1,4 @@
+
 # Etapas para execução do projeto
 
 
@@ -41,7 +42,7 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `name`      | `string` | **Obrigatório**. Nome do serviço |
 | `description`      | `string` | **Opcional**. Breve descrição do serviço |
-| `idEnterprise`      | `string` | **Obrigatório**. ID da empresa a ser lançada a hora|
+| `idEnterprise`      | `number` | **Obrigatório**. ID da empresa a ser lançada a hora|
 | `hours`      | `Date` | **Obrigatório**. Quantidade de horas|
 | `date`      | `Date` | **Obrigatório**. Dia a ser lançado as horas|
 
@@ -55,7 +56,7 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `name`      | `string` | **Obrigatório**. Nome do serviço |
 | `description`      | `string` | **Opcional**. Breve descrição do serviço |
-| `idEnterprise`      | `string` | **Obrigatório**. ID da empresa a ser lançada a hora|
+| `idEnterprise`      | `number` | **Obrigatório**. ID da empresa a ser lançada a hora|
 | `hours`      | `Date` | **Obrigatório**. Quantidade de horas|
 | `date`      | `Date` | **Obrigatório**. Dia a ser lançado as horas|
 

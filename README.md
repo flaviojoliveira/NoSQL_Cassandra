@@ -1,2 +1,2 @@
 # NoSQL_Cassandra
-Projeto executado na discplina de POO II - Joabe
+Projeto executado na discplina de POO II - Joab

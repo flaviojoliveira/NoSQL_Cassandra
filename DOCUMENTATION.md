@@ -3,6 +3,34 @@
 
 
 
+## Documentação do Container
+
+```yml
+version: '2'
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  cassandra:
+    image: 'bitnami/cassandra:latest'
+    networks:
+      - app-tier
+```
+
+Executando o container
+
+```bash
+  docker-compose -d up
+```
+
+Parando o container
+
+```bash
+  docker-compose -d down
+```
+
 ## Documentação da API
 
 #### Adicionar novas empresas

@@ -1,6 +1,6 @@
 import { Task } from '../entities/task';
 
-class CategoryRepositories {
+class TaskRepositories {
   async saveTask(task: Task): Promise<Task> {
     return task;
   }
@@ -18,4 +18,4 @@ class CategoryRepositories {
   }
 }
 
-export { CategoryRepositories };
+export { TaskRepositories };

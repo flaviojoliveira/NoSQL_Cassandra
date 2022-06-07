@@ -1,9 +1,10 @@
-import { Router } from 'express';
+import { Router } from "express";
+import { CreateTaskController } from "./controllers/CreateTaskController";
 
 const router = Router();
 
-router.get('/api/task', (req, res) => {
-  res.send();
-});
+const createTaskController = new CreateTaskController();
+
+router.post("/api/task", createTaskController.handle);
 
 export { router };

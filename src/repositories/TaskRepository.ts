@@ -1,7 +1,7 @@
 import { Task } from '../entities/task';
 
 class TaskRepositories {
-  async saveTask(task: Task): Promise<Task> {
+  async saveTask(task: Omit<Task, "id">): Promise<Omit<Task, "id">> {
     return task;
   }
 

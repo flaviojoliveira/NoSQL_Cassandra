@@ -8,9 +8,8 @@ interface ICreateTaskRequest {
 class CreateTaskService { 
   async execute({ name, description }: ICreateTaskRequest ) {
     const categoriesRepository = new TaskRepositories();
-    const id = "12121"
 
-    const category = categoriesRepository.saveTask({ id, name, description });
+    const category = categoriesRepository.saveTask({ name, description });
 
     return category;
   }

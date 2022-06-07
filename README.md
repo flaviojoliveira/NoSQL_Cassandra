@@ -1,14 +1,13 @@
-# Sistema de controle de horas
+# Organização diária
 
-O projeto busca resolver problemas de controle de horas mensais dos profissionais freelances, 
-com a intenção de permitir ao profissional uma melhor organização no seu dia a dia com os seus clientes.
-
+O projeto busca resolver problemas de organização de atividades diárias de qualquer profissional, com a inteção de permitir o profissional uma melhor organização do seu dia.
 
 ## Funcionalidades
 
-- Lançamento de horas
-- Gerenciamento de multiplas empresas
-- Relatório por período
+- Lançamento de atividades
+- Listagem das tarefas
+- Exclusão das tarefas
+- Edição das tarefas
 
 
 ## Stack utilizada
@@ -26,4 +25,3 @@ Para lidar com armazenamento das informações iremos utilizar o banco de dados 
 ## Autor
 
 - [@joabsena](https://github.com/joabsena)
-

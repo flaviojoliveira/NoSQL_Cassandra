@@ -33,10 +33,10 @@ Parando o container
 
 ## Documentação da API
 
-#### Adicionar novas empresas
+#### Adicionar nova atividade
 
 ```http
-  POST /api/enterprise
+  POST /api/task
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
@@ -44,76 +44,26 @@ Parando o container
 | `name`      | `string` | **Obrigatório**. O Nome da empresa |
 | `description`      | `string` | **Opcional**. Breve descrição da empresa|
 
-#### Listar todas empresas cadastradas
+#### Listar todas as tasks
 
 ```http
-  GET /api/enterprise
+  GET /api/task
 ```
 
-#### Retorna uma empresa
+#### Editar task
 
 ```http
-  GET /api/enterprise/${id}
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
-
-#### Lançar hora
-
-```http
-  POST /api/appointment
+  PUT /api/task/${id}
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `name`      | `string` | **Obrigatório**. Nome do serviço |
 | `description`      | `string` | **Opcional**. Breve descrição do serviço |
-| `idEnterprise`      | `number` | **Obrigatório**. ID da empresa a ser lançada a hora|
-| `hours`      | `Date` | **Obrigatório**. Quantidade de horas|
-| `date`      | `Date` | **Obrigatório**. Dia a ser lançado as horas|
 
-#### Editar lançamento de hora
+
+#### Excluir task
 
 ```http
-  PUT /api/appointment/${id}
+  DELETE /api/task/${id}
 ```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `name`      | `string` | **Obrigatório**. Nome do serviço |
-| `description`      | `string` | **Opcional**. Breve descrição do serviço |
-| `idEnterprise`      | `number` | **Obrigatório**. ID da empresa a ser lançada a hora|
-| `hours`      | `Date` | **Obrigatório**. Quantidade de horas|
-| `date`      | `Date` | **Obrigatório**. Dia a ser lançado as horas|
-
-
-#### Listar horas cadastradas
-
-```http
-  GET /api/appointment
-```
-
-#### Retorna horas de uma empresa
-
-```http
-  GET /api/enterprise/appointment/${id}
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID da empresa |
-
-
-#### Retorna horas por período de uma determinada empresa
-
-```http
-  GET /api/enterprise/appointment?idEnterprise=${id}&dateTo=${dateTo}&dateFrom=${dateFrom}
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID da empresa |
-| `dateTo`      | `Date` | **Obrigatório**. Data inicial de busca |
-| `dateFrom`      | `Date` | **Obrigatório**. Data final de busca |

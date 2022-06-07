@@ -5,7 +5,7 @@ class TaskRepositories {
     return task;
   }
 
-  async getById(id: string): Promise<Task> {
+  async listAll(id: string): Promise<Task> {
     return new Task();
   }
 

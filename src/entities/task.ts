@@ -7,9 +7,15 @@ class Task {
 
   description: string;
 
+  status?: boolean;
+
   constructor() {
     if(!this.id) {
       this.id = uuid();
+    }
+
+    if(!this.status) {
+      this.status = true;
     }
   }
 }
